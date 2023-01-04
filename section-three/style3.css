@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Unbounded', cursive;
+*/
+
+/* Set the box-sizing for all elements to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.splitBlock {
+  display: flex;
+}
+
+.left-col {
+  width: 700px;
+  height:700px;
+  background-color: purple;
+  padding: 5%;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 60px;
+  font-family: "Unbounded", cursive;
+}
+.address{
+  margin-bottom:20px;
+}
+.right-col {
+  width: 50%;
+}
+
+figure {
+  width: 700px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button {
+  margin-top: 20px;
+
+}
+
+/*
+Responsive Web Design.
+-----------------------
+1024   - tablet
+768    - phone
+420    - phone portrait
+
+*/
+
+@media screen and (max-width: 1024px) {
+  .button a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+  }
+
+  figure {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .button a {
+    text-align: center;
+  }
+}
+/*  */
